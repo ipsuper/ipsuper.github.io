@@ -1,0 +1,14 @@
+/* 新增回到顶部按钮样式dn/go-top */
+.dn{
+    display: none;
+  }
+  .go-top{
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    z-index: 999;
+  }
+  #go-top{
+    width: 85px;
+    height: 85px;
+  }
