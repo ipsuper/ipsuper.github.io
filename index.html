@@ -3754,9 +3754,12 @@
             data: { NO_CHECK: 1 }, success: function (res) {
                 let data = res.data.data;
                 let meal = res.data.meal;
-                $('.wxpic').attr('src', data.wx.image);
+				if(data){
+				$('.wxpic').attr('src', data.wx.image);
                 $('.alipaypic').attr('src', data.alipay.image);
                 $('#bankcode').text(data.bank.value)
+				}
+                
             }
         });
     </script>
